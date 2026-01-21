@@ -11,12 +11,13 @@ body {
     margin-top: 20px;
     box-shadow: 0.5px 0.5px 0.5px #000;
 }
-
+#txt_date {
+    cursor:pointer;
+}
 .card-title {
     font-size: 12pt;
     background-color:#FFFFFF;
     color:#6B6B6B;
-    cursor:crosshair;
 }
 .card-footer {
     font-size: 10pt;
