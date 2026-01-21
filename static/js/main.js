@@ -53,8 +53,9 @@ try{
     locale:malagasyLocale,
     onChange: (a,b)=>{
       document.getElementById("txt_date").textContent=b;
-      date=lines.find(x=>getDate(x)==b);
-      alert(date)
+      verset=lines.find(x=>getDate(x)==b);
+      document.getElementById("title").textContent=getRef(verset);
+      document.getELementById("content").textContent=getCont(verset);
     }
   });
   document.getElementsByClassName("card-header")[0].onclick=e=>fl_date.open();
