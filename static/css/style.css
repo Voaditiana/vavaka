@@ -6,7 +6,8 @@ body {
 
 #card {
     height: 80vh;
-    margin: 10px;
+    width: fit-content;
+    margin: 0px auto;
     box-shadow: 0.5px 0.5px 0.5px #000;
 }
 
@@ -27,7 +28,5 @@ body {
    opacity:0;
 }
 @media (min-width:1024px){
-    #card {
-        width:50vw;
-    }
+    
 }
