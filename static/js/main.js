@@ -45,6 +45,11 @@ try{
   // ordinal function (can remain simple if not needed)
   ordinal: () => ''
 };
+  //Initialize today verset
+      verset=lines.find(x=>getDate(x)==new Date().toISOString().slice(0,10));
+      document.getElementById("txt_date").textContent=getDate(verset);
+      document.getElementById("title").textContent=getRef(verset);
+      document.getElementById("content").textContent=getCont(verset);
   
   //Configuration amzay
   fl_date=flatpickr(".date",{
@@ -55,7 +60,7 @@ try{
       document.getElementById("txt_date").textContent=b;
       verset=lines.find(x=>getDate(x)==b);
       document.getElementById("title").textContent=getRef(verset);
-      document.getELementById("content").textContent=getCont(verset);
+      document.getElementById("content").textContent=getCont(verset);
     }
   });
   document.getElementsByClassName("card-header")[0].onclick=e=>fl_date.open();
