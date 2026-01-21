@@ -53,8 +53,8 @@ try{
     locale:malagasyLocale,
     onChange: (a,b)=>{
       document.getElementById("txt_date").textContent=b;
-      date=lines.find(x=>x);
-      console.log(date)
+      date=lines.find(x=>getDate(x)==b);
+      alert(date)
     }
   });
   document.getElementsByClassName("card-header")[0].onclick=e=>fl_date.open();
