@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-s)!l67&t-i*yb+&x=myphtzxrgm!74(cfm!y!@53gv)ked8wjc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vavaka.onrender.com']
 
 
 # Application definition
