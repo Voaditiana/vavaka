@@ -53,7 +53,7 @@ try{
     locale:malagasyLocale,
     onChange: (a,b)=>{
       document.getElementById("txt_date").textContent=b;
-      date=lines.find(x=>x==b);
+      date=lines.find(x=>x);
       console.log(date)
     }
   });
