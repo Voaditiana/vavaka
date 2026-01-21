@@ -27,7 +27,7 @@ body {
    opacity:0;
 }
 @media (min-width:1024px){
-    .card {
-        margin:500px;
+    #card {
+        width:50vw;
     }
 }
