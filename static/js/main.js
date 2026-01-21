@@ -68,7 +68,7 @@ console.log(e);}
 
 try{
   txt_date.onchange=e=>{
-    const date_txt=e.target.textContent;
+    const date_txt=txt_date.textContent;
     console.log(date_txt);
   }
 }catch(e){
