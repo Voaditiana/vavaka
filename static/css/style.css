@@ -20,3 +20,8 @@ body {
    position: absolute;
    opacity:0;
 }
+@media (min-width:1024px){
+    .card {
+        margin:100px;
+    }
+}
