@@ -3,7 +3,7 @@ try{
   const txt_date=document.getElementById("txt-date");
   const lines= versets.split("\n");
   	const getDate=l=>/\d{4}-\d{2}-\d{2}/.exec(l)[0];
-      	const getRef=l=>/\d*\s?\w+ \d+,\s?\d+/.exec(l)[0];
+      	const getRef=l=>/\d*\s?\p{L}+ \d+,\s?\d+/u.exec(l)[0];
       	const getCont=l=>(/,"[^"]+"/.exec(l)[0]).substring(1);
       	console.log(getCont(lines[3]));
    const malagasyLocale = {
