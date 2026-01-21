@@ -45,6 +45,7 @@ try{
   fl_date=flatpickr(".date",{
     dateFormat:"j F Y",
     wrap:true,
+    enableTime:true,
     locale:malagasyLocale,
     onChange: (a,b)=>{
       document.getElementById("txt_date").textContent=b;
