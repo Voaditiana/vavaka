@@ -1,6 +1,11 @@
 try{
   //Locale special malagasy
   const txt_date=document.getElementById("txt-date");
+  const lines= versets.split("\n");
+  	const getDate=l=>/\d{4}-\d{2}-\d{2}/.exec(l)[0];
+      	const getRef=l=>/\d*\s?\w+ \d+,\s?\d+/.exec(l)[0];
+      	const getCont=l=>(/,"[^"]+"/.exec(l)[0]).substring(1);
+      	console.log(getCont(lines[3]));
    const malagasyLocale = {
   // Abbreviated weekday names (starting with Sunday)
   weekdays: {
@@ -43,12 +48,13 @@ try{
   
   //Configuration amzay
   fl_date=flatpickr(".date",{
-    dateFormat:"j F Y",
+    dateFormat:"Y-m-d",
     wrap:true,
-   
     locale:malagasyLocale,
     onChange: (a,b)=>{
       document.getElementById("txt_date").textContent=b;
+      date=lines.find(x=>x==b);
+      console.log(date)
     }
   });
   document.getElementsByClassName("card-header")[0].onclick=e=>fl_date.open();
@@ -56,21 +62,4 @@ try{
   // Tab to edit
   console.log(e);
 }
-try{
-      	const lines= versets.split("\n");
-      	const getDate=l=>/\d{4}-\d{2}-\d{2}/.exec(l)[0];
-      	const getRef=l=>/\d*\s?\w+ \d+,\s?\d+/.exec(l)[0];
-      	const getCont=l=>(/,"[^"]+"/.exec(l)[0]).substring(1);
-      	console.log(getCont(lines[3]));
-      	
-}catch(e){
-console.log(e);}
 
-try{
-  txt_date.onchange=e=>{
-    const date_txt=txt_date.textContent;
-    console.log(date_txt);
-  }
-}catch(e){
-  console.log(e);
-}
