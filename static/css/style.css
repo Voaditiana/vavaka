@@ -1,6 +1,6 @@
 body {
     font-size: 15pt;
-    background-color:#D1EDE1;
+    background-color:#003E19;
     color:#FFFFFF;
 }
 
@@ -9,23 +9,22 @@ body {
     width: fit-content;
     margin: 0px auto;
     margin-top: 20px;
+    background-color:#028c6a;/*couleur footer &header*/
     box-shadow: 0.5px 0.5px 0.5px #000;
-    background-color:#003E19;
 }
 #txt_date {
     cursor:pointer;
 }
 .card-title {
     font-size: 12pt;
-    background-color:#7BC5AE;
-    color:white;
 }
 .card-footer {
     font-size: 10pt;
-    background-color:#7BC5AE;
-    color:#FFFFFF;
 }
-
+.card-body {
+    background-color:#7BC5AE;
+    
+}
 .date {
    /*display:none;*/
    position: absolute;
