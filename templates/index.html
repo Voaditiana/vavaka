@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <div class="offcanvas" id="menu">
+  <div class="offcanvas offcanvas-start" id="menu">
     <div class="offcanvas-header">
       <h1 class="offcanvas-title"></h1>
       <button class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -33,7 +33,9 @@
       <p>Paramètre</p>
     </div>
   </div>
-  <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#menu">offcanvas</button>
+  <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#menu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
   <!--tab at the top to switch language-->
   <!--<ul class="container-fluid nav nav-tabs nav-justified">
     <li class="nav-item active"><a>Français</a></li>
