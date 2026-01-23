@@ -33,3 +33,7 @@ body {
 @media (min-width:1024px){
     
 }
+
+.navbar-toggler-icon{
+    filter:invert(1);
+}
