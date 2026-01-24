@@ -41,3 +41,8 @@ body {
 .navbar {
     background-color:#028c5a;
 }
+.offcanvas {
+    width:fit-content;
+    background-color:#028b5a;
+    color:white;
+}
